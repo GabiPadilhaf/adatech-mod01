@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produto - Brechó Florinda </title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <main>    
+        <header>             
+            <div class="cabecalho">   
+                <h1>Cadastro de Produto - Brechó Florinda </h1>
+                <img src="./flor.png.png" alt="flor">
+            </div>
+        </header>
+        
+        <div>
+            <form method="post" class="form">
+                <!-- input nome do produto -->
+                <label for="nome-produto">Nome do produto: </label>
+                <input type="text" name="produto" id="produto" placeholder="Nome do produto">
+
+                <!-- input quantidade -->
+                <label for="estoque">Quantidade de entrada: </label>
+                <input type="number" name="estoque" id="estoque" placeholder="Quantidade">
+
+                <!-- input categoria select -->
+                <label for="categoria">Categoria do Produto: </label>
+                <select name="categoria" id="categoria">
+                    <option>Selecione aqui</option>
+                    <option value="vestuario">Vestuário</option>
+                    <option value="calçado">Calçado</option>
+                    <option value="acessorio">Acessório</option>
+                </select>
+
+                <!-- input estado radio -->
+                <div>
+                    <label for="estadodoproduto">Estado do produto:</label>
+                    <input type="radio" id="estado" name="novo" value="novo">
+                    <label for="novo" id="estado">Novo</label>
+                    <input type="radio" id="estado" name="usado" value="usado">
+                    <label for="usado" id="estado">Usado</label>
+
+                </div>
+               
+
+                <!-- input obs textarea -->
+                <label for="observacoes">Observações: </label>
+                <textarea name="observacoes" id="observacoes" cols="25" rows="5" placeholder="Escreva aqui o texto"></textarea>
+
+                <!-- input botão submit -->
+                <input type="submit" value="Cadastrar" id="btn">
+            </form>
+        </div>    
+        <script src="./crud.js"></script>
+        <div class="tabela">
+            <h3>Produtos Cadastrados: </h3>
+            
+            <table>
+                <!-- <tr>
+                    <th>Nome do Produto</th>
+                    <th>Quantidade</th>
+                    <th>Categoria</th>
+                    <th>Estado</th>
+                    <th>Observações</th>
+                </tr> -->
+            </table>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+</html>
