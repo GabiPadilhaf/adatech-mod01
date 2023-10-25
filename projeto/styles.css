@@ -1,0 +1,46 @@
+body{
+    background-color: #dad5d1 ;
+    font-family: 'Raleway', sans-serif;
+}
+header{
+    background-image: url('./img/bg-header.jpg');
+    height: 30vh;
+    min-height: 400px;
+    background-size: cover;
+
+
+}
+.card{
+    border-style: none;
+}
+.navbar{
+    background-color: #8c9b92;
+}
+.nav-link:hover{
+    background-color: #4a5336;
+    color: white;
+}
+.btn{
+    background-color: #4a5336;
+    color: white;
+    border-style: none;
+}
+.btn:hover{
+    background-color:#dad5d1;
+    color: #4a5336;
+}
+.navbar-brand{
+    padding-top: 0.7em;
+    margin-left: 1em;
+}
+.dropdown-item:hover{
+    background-color: #4a5336;
+    color: white;
+}
+.banner-image{
+    background-image: url('img/bg-header.jpg');
+    background-size: cover;
+}
+.card-img-overlay{
+    max-width: 50vh;
+}
